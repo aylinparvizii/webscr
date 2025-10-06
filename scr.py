@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup 
 import pandas as pd
 
-#آدرس صفحه دسته بندی لپتاپ ها
+#آدرس صفحه
 url = "https://price.forsatnet.ir/car-price.html"
 
 headers = {
@@ -64,6 +64,7 @@ with open("car_data.csv", "w", encoding= "utf-8") as f:
   df.to_csv(f, index = False)
 
 print("File  is created successfully!")
+
 
 
 
